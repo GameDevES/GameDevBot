@@ -1,0 +1,14 @@
+{
+  "name": "gamedevbot",
+  "version": "0.0.1",
+  "description": "GameDev Bot",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "author": "StartForKiller, GameDevES 2019",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "discord.js": "^11.5.0"
+  }
+}
