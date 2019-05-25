@@ -10,6 +10,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "discord.js": "github:discordjs/discord.js",
-    "klasa": "github:dirigeants/klasa"
+    "klasa": "github:dirigeants/klasa",
+    "mongodb": "^3.2.6"
   }
 }
