@@ -18,7 +18,7 @@ module.exports = class extends Provider {
 		}, this.client.options.providers.mongodb);
 
 		// If full connection string is provided, use that, otherwise fall back to individual parameters
-		const connectionString = this.client.options.providers.mongodb.connectionString || `mongodb://${connection.user}:${connection.password}@${connection.host}:${connection.port}/${connection.db}`;
+		const connectionString = this.client.options.providers.mongodb.connectionString || `mongodb+srv://GameDev:${process.env.MONGODB_PASS}@gamedev-aq4af.mongodb.net/${connection.db}`;
 
 		const mongoClient = await Mongo.connect(
 			connectionString,
