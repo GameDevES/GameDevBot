@@ -9,7 +9,7 @@
   "author": "StartForKiller, GameDevES 2019",
   "license": "UNLICENSED",
   "dependencies": {
-    "discord.js": "^11.5.0",
+    "discord.js": "github:discordjs/discord.js",
     "klasa": "github:dirigeants/klasa"
   }
 }
