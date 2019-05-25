@@ -1,14 +1,11 @@
-const Discord = require("discord.js");
-const client = new Discord.Client();
- 
-client.on("ready", () => {
-  console.log("I am ready!");
-});
- 
-client.on("message", (message) => {
-  if (message.content.startsWith("ping")) {
-    message.channel.send("pong!");
-  }
-});
- 
-client.login(process.env.BOT_TOKEN);
+const { Client } = require('klasa');
+
+new Client({
+    clientOptions: {
+        fetchAllMembers: false
+    },
+    prefix: '+',
+    cmdEditing: true,
+    typing: true,
+    readyMessage: (client) => `${client.user.tag}, Ready to serve ${client.guilds.size} guilds and ${client.users.size} users`
+}).login(process.env.BOT_TOKEN);
